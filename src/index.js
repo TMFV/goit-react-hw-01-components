@@ -7,7 +7,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ModernNormalize>
         <App />
-    </ModernNormalize>,
+    </ModernNormalize>
   </React.StrictMode>,
   document.getElementById('root')
 );
