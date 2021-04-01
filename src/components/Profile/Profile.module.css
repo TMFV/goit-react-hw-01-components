@@ -1,6 +1,8 @@
 .profile {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 252px;
-  border: 1px solid border-col;
+  border: 1px solid #9e9e9e;
   border-radius: 4px;
 }
 .description {
