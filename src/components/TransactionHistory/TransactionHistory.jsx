@@ -1,4 +1,5 @@
 import styles from './TransactionHistory.module.css';
+import PropTypes from 'prop-types';
 
 function upperFirstLetter(string) {
     let newStr = string[0].toUpperCase() + string.slice(1);
@@ -25,6 +26,16 @@ const TransactionHistory = ({items}) => {
         </tbody>
     </table>
     </div>
+}
+TransactionHistory.propTypes = {
+    id: PropTypes.string.isRequired,
+    type: PropTypes.string,
+    amount: PropTypes.string.isRequired,
+    currency: PropTypes.string
+}
+TransactionHistory.defaultProps = {
+    type: "Type",
+    currency: "Currency"
 }
 
 export default TransactionHistory;

@@ -1,4 +1,5 @@
 import styles from './FriendList.module.css';
+import PropTypes from 'prop-types';
 
 function friendOnline(status) {
     if (status) {
@@ -19,6 +20,17 @@ const FriendList = ({ friends })=> {
         
         </ul>
     </div>
+}
+FriendList.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool,
+    id: PropTypes.string.isRequired,
+}
+FriendList.defaultProps = {
+    avatar: "https://www.flaticon.com/svg/static/icons/svg/1623/1623681.svg",
+    name: "User name",
+    isOnline: false,
 }
 
 export default FriendList;
