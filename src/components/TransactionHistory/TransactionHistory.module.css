@@ -1,0 +1,36 @@
+.transTable {
+  display: flex;
+  justify-content: center;
+}
+table {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', Sans-Serif;
+  font-size: 12px;
+  border-collapse: collapse;
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+}
+th {
+  width: 250px;
+  height: 45px;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 0 1px 1px 0;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  border-color: #ffffff;
+  background: #07aecc;
+}
+
+td {
+  width: 250px;
+  height: 45px;
+  padding: 10px 20px;
+  border-left: 1px solid #dbdbdb;
+  border-right: 1px solid #dbdbdb;
+  color: #4d4d4df1;
+}
+td {
+  background: #ffffff;
+}
